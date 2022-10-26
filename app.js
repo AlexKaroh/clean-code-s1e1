@@ -37,7 +37,10 @@ var createNewTaskElement=function(taskString){
 
     //Each elements, needs appending
     checkBox.type="checkbox";
-    editInput.className="content__checkbox";
+    checkBox.className="content__checkbox";
+    editInput.className="content__input";
+
+    editInput.type="text";
     editInput.className="content__input";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
@@ -160,7 +163,7 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
 //select ListItems children
     var checkBox=taskListItem.querySelector("input[type=checkbox]");
     var editButton=taskListItem.querySelector("button.edit");
-    var deleteButton=taskListItem.querySelector("button.button-delete");
+    var deleteButton=taskListItem.querySelector("button.button_delete");
 
 
     //Bind editTask to edit button.
