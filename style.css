@@ -19,7 +19,9 @@
 
 @media (max-width:768px) {
 
-.header__wrapper { text-align: center; }
+  .header__wrapper {
+    text-align: center;
+  }
 
 }
 .content {
